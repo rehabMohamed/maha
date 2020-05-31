@@ -1,4 +1,4 @@
-package com.neobank.maha.gallery.data
+package com.neobank.maha.gallery.takephoto
 
 import java.util.Date
 
