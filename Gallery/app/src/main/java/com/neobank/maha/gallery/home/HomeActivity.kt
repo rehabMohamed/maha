@@ -1,8 +1,11 @@
 package com.neobank.maha.gallery.home
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.neobank.maha.gallery.R
+import com.neobank.maha.gallery.photolist.PhotoListActivity
+import com.neobank.maha.gallery.takephoto.TakePhotoActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -11,10 +14,10 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        initListiners()
+        initListeners()
     }
 
-    private fun initListiners() {
+    private fun initListeners() {
         takePhoto.setOnClickListener {
             openTakePhotoScreen()
         }
@@ -25,10 +28,10 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun openTakePhotoScreen() {
-        // TODO: open take photo screen
+        startActivity(Intent(this, TakePhotoActivity::class.java))
     }
 
     private fun openPhotoListScreen() {
-        // TODO: open photo list screen
+        startActivity(Intent(this, PhotoListActivity::class.java))
     }
 }
