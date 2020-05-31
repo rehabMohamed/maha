@@ -17,7 +17,7 @@ The application follows the MVP architecture. It consists of 4 screens. Each scr
 - **Photo list screen:** Displays the photo in full screen while keeping the scale ratio of the original photo when the user clicks on any photo in the photo list screen.
 
 ## Database:
-The app uses the Room database. It has only one entity (table) called Photo which has 4 fields:
+The app uses [Room](https://developer.android.com/training/data-storage/room) database. It has only one entity (table) called Photo which has 4 fields:
 - **id:** the primary key (auto generated)
 - **name:** the photo name.
 - **url:** the url to the saved photo in the internal files directory
